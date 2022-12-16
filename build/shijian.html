@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>柱状图</title>
+    <!-- 引入 echarts.js -->
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+</head>
+ 
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+ 
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+ 
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '时间序列变化'  // 柱状图标题，位于柱状图左上角。
+            },
+            tooltip: {},
+            legend: {
+                data:['案例数']  // 此处数据无关紧要，不知道什么原因。
+            },
+            xAxis: {
+                data: ["2004","2005","2007","2008","2011","2012","2013","2014","2015","2016","No Year"]  // x轴数据。
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',  // 柱状图名字，位于柱状图的正上方。
+                type: 'line',  // 柱状图。
+                data: [1, 2, 2, 1, 8, 75, 1168, 4702, 7540, 552,1343]  // 此处数据，与x轴的数据一一对应。
+            }]
+        };
+ 
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
