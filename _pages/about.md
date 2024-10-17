@@ -9,4 +9,4 @@ redirect_from:
 
 I'm a third year postgraduate student from  [University of Chinese Academy of Sciences, Institute of geographic sciences and natural resource
 research](https://igsnrr.cas.cn/). My research interest includes ecosystem resilience, global climate change, applications of Remote Sensing and GIS and Causal inference.
-You can find my CV here: [Wu jiapei's Curriculum Vitae](https://github.com/stillyou/stillyou.github.io/blob/master/files/Jiapei_Wu_Resume.pdf)
+You can find my CV here: [Wu jiapei's Curriculum Vitae](https://github.com/stillyou/stillyou.github.io/blob/master/files/Jiapei_Wu_Resume.pdf/)
