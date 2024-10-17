@@ -1,4 +1,4 @@
----
+--
 layout: compress
 ---
 
@@ -9,6 +9,22 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    
+    <style>
+      /* CSS styles for ClustrMaps */
+      #clustrmaps-container {
+        width: 100%; /* Container width */
+        max-width: 400px; /* Max width */
+        margin: 20px auto; /* Center alignment and margin */
+        text-align: center; /* Center text */
+      }
+
+      #clustrmaps {
+        width: 100%; /* Full width of the container */
+        height: 200px; /* Set the height */
+        max-width: 100%; /* Ensure it doesn't exceed container width */
+      }
+    </style>
   </head>
 
   <body>
@@ -24,9 +40,11 @@ layout: compress
         {% include footer.html %}
       </footer>
     </div>
+
     <div id="clustrmaps-container">
       <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Wymr5YrH24KUVmQ49DuH-Li4sMThIy0XROXv-tM7yLg&cl=ffffff&w=a"></script>
     </div>
+
     {% include scripts.html %}
   </body>
 </html>
